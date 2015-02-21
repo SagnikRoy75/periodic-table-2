@@ -12,6 +12,10 @@
 	padding: 0px;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -20,9 +24,20 @@ div {
 
 div.container {
 	background: @grey;
-	min-height: 900px;
 	margin: 15px auto;
-	width: 1352px;
+	width: 1291px;
+	min-height: 900px;
+	h1 {
+		text-align: center;
+		padding: 25px;
+	}
+	p {
+		font-size: 15px;
+	}
+	p.credits {
+		padding: 25px;
+		text-align: center;
+	}
 }
 
 div.element, div.placeholder, div.placeholder-mini-v, div.placeholder-mini-h,
@@ -37,18 +52,18 @@ div.placeholder-mini-h2 {
 	-webkit-user-select: none;
 	-ms-user-select: none; 
 	-moz-user-select: none;
-	user-select: none; 
+	user-select: none;
+	margin-bottom: 5px;
 }
 
 div.element, div.placeholder {
-	height: 75px;
-	width: 70px;
+	height: 70px;
+	width: 62px;
 }
 
 div.element {
 	padding: 4px;
 	border: 1px solid black;
-	margin-bottom: 5px;
 }
 
 div.element:hover {
@@ -56,12 +71,19 @@ div.element:hover {
 }
 
 div.placeholder {
+	padding-top: 15px;
+	padding-left: 5px;
 	// background: orange;
 }
 
+div.placeholder, div.placeholder-mini-v {
+	color: @red;
+}
+
 div.placeholder-mini-v { //v for vertical
-	height: 75px;
+	height: 69px;
 	width: 20px;
+	padding-top: 15px;
 	// background: pink;
 }
 
@@ -70,7 +92,7 @@ div.placeholder-mini-h, div.placeholder-mini-h2 {
 }
 
 div.placeholder-mini-h { //h for horizontal
-	width: 70px;
+	width: 62px;
 	// background: orange;
 }
 
