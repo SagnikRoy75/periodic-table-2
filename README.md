@@ -4,4 +4,4 @@ an HTML/CSS build of the Periodic Table of Elements built in under 2 hours as pa
 Please feel free to clone this repository and make pull requests.
 
 #Live Demo
-A working version of this site is up at <a href="www.elliottcreates.com/periodic-table">www.elliottcreates.com/periodic-table</a>
+A working version of this site is up at <a href="http://www.elliottcreates.com/periodic-table">www.elliottcreates.com/periodic-table</a>
