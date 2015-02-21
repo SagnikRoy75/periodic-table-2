@@ -1,4 +1,4 @@
-# periodic-table
+# Coding Dojo's Periodic Table HTML/CSS Assignment
 an HTML/CSS build of the Periodic Table of Elements built in under 2 hours as part of the optional assignments for the CSS/HTML section of week one.
 
 Please feel free to clone this repository and make pull requests.
