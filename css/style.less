@@ -5,6 +5,7 @@
 @red: #F68598;
 @grey: #EEEEEE;
 @royalblue: #1913A2;
+@cyan: #00FFFF;
 
 * {
 	margin: 0px;
@@ -24,43 +25,58 @@ div.container {
 	width: 1352px;
 }
 
-div.element, div.placeholder, div.placeholder-mini-v, div.placeholder-mini-h2,
-div.placeholder-mini-h {
+div.element, div.placeholder, div.placeholder-mini-v, div.placeholder-mini-h,
+div.placeholder-mini-h2 {
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
 }
 
-div.placeholder {
-	height: 75px;
-	width: 70px;
-	background: orange;
-}
-
-div.placeholder-mini-v {
-	height: 75px;
-	width: 20px;
-	background: pink;
-}
-
-div.placeholder-mini-h {
-	width: 70px;
-	height: 15px;
-	background: orange;
-}
-
+div.placeholder, div.placeholder-mini-v, div.placeholder-mini-h,
 div.placeholder-mini-h2 {
-	width: 20px;
-	height: 15px;
-	background: pink;
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	-moz-user-select: none;
+	user-select: none; 
+}
+
+div.element, div.placeholder {
+	height: 75px;
+	width: 70px;
 }
 
 div.element {
-	height: 75px;
-	width: 70px;
 	padding: 4px;
 	border: 1px solid black;
 	margin-bottom: 5px;
+}
+
+div.element:hover {
+	background: @cyan;
+}
+
+div.placeholder {
+	// background: orange;
+}
+
+div.placeholder-mini-v { //v for vertical
+	height: 75px;
+	width: 20px;
+	// background: pink;
+}
+
+div.placeholder-mini-h, div.placeholder-mini-h2 {
+	height: 15px;
+}
+
+div.placeholder-mini-h { //h for horizontal
+	width: 70px;
+	// background: orange;
+}
+
+div.placeholder-mini-h2 { //h2 for special horizonal div
+	width: 20px;
+	// background: pink;
 }
 
 h3 {
@@ -81,4 +97,8 @@ h3 {
 
 .green {
 	background: @green;
+}
+
+.red {
+	color: @red;
 }
